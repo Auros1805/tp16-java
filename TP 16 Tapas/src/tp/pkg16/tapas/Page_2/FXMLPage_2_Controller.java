@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tp.pkg16.tapas;
+package tp.pkg16.tapas.Page_2;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -16,7 +16,7 @@ import javafx.scene.control.Label;
  *
  * @author denis
  */
-public class FXMLDocumentController implements Initializable {
+public class FXMLPage_2_Controller implements Initializable {
     
     @FXML
     private Label label;
