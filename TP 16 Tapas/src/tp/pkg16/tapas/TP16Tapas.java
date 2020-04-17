@@ -10,7 +10,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
+import Class.Session.*;
+import static Class.Switcher.*;
+import tp.pkg16.tapas.Page_1.*;
+import tp.pkg16.tapas.Page_2.*;
 /**
  *
  * @author denis
@@ -19,7 +22,7 @@ public class TP16Tapas extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Page_1/FXMLPage_1.fxml"));
         
         Scene scene = new Scene(root);
         

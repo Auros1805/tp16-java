@@ -11,7 +11,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-
+import Class.Session.*;
+import Class.Switcher;
+import static Class.Switcher.*;
 /**
  *
  * @author denis
@@ -22,9 +24,9 @@ public class FXMLDocumentController implements Initializable {
     private Label label;
     
     @FXML
-    private void handleButtonAction(ActionEvent event) {
+    private void btnAcceuil(ActionEvent event) {
         System.out.println("You clicked me!");
-        label.setText("Hello World!");
+        Switcher.switchPage(1);
     }
     
     @Override
