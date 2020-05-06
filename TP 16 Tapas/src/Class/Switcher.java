@@ -11,7 +11,7 @@ public class Switcher {
     
     public static String switchPageMain()
     {
-        String page = "FXMLPAGE_"+Session.getPage()+".fxml";
+        String page = "Page_"+Session.getPage()+"/FXMLPAGE_"+Session.getPage()+".fxml";
         if(Session.getPage()==0)
         {
             page = "FXMLDocument.fxml";
@@ -19,7 +19,7 @@ public class Switcher {
         return page;
     }
     
-     public static void  switchPage(int numPage)
+    public static void  switchPage(int numPage)
     {
         Session.setPage(numPage);
     }

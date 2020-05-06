@@ -11,6 +11,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import Class.Session.*;
+import Class.Switcher;
 import static Class.Switcher.*;
 import tp.pkg16.tapas.Page_1.*;
 import tp.pkg16.tapas.Page_2.*;
@@ -22,10 +23,9 @@ public class TP16Tapas extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("Page_1/FXMLPage_1.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource(Switcher.switchPageMain()));
         
         Scene scene = new Scene(root);
-        
         stage.setScene(scene);
         stage.show();
     }
