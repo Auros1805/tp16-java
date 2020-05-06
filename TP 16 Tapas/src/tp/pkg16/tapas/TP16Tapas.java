@@ -23,13 +23,8 @@ public class TP16Tapas extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        while(true)
-        {
-            Parent root = FXMLLoader.load(getClass().getResource(Switcher.switchPageMain()));
-            Scene scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
-        }
+        Switcher.setApplication(stage);
+        stage.show();
     }
 
     /**

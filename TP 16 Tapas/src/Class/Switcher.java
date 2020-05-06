@@ -6,8 +6,21 @@
 package Class;
 
 import Class.Session;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import tp.pkg16.tapas.TP16Tapas;
 
 public class Switcher {
+    private static Stage application;
+
+    public static void setApplication(Stage application) {
+        Switcher.application = application;
+    }
     
     public static String switchPageMain()
     {
@@ -21,6 +34,14 @@ public class Switcher {
     
     public static void  switchPage(int numPage)
     {
-        Session.setPage(numPage);
+        Parent root;
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            root = loader.getResource("Page_"+numPage+"/FXMLPAGE_"+numPage+".fxml");
+        } catch (IOException ex) {
+            Logger.getLogger(Switcher.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        Scene scene = new Scene(root);
+        application.setScene(scene);
     }
 }
