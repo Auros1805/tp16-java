@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tp.pkg16.tapas.Page_1;
+package tapas;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -14,7 +14,7 @@ import javafx.fxml.Initializable;
  *
  * @author denis
  */
-public class FXMLPage_1Controller implements Initializable {
+public class FXMLPage_2Controller implements Initializable {
 
     /**
      * Initializes the controller class.

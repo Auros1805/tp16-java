@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tp.pkg16.tapas;
+package application;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -13,8 +13,6 @@ import javafx.stage.Stage;
 import Class.Session.*;
 import Class.Switcher;
 import static Class.Switcher.*;
-import tp.pkg16.tapas.Page_1.*;
-import tp.pkg16.tapas.Page_2.*;
 /**
  *
  * @author denis
@@ -24,6 +22,7 @@ public class TP16Tapas extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Switcher.setApplication(stage);
+        Switcher.changePage("FXMLDocument.fxml");
         stage.show();
     }
 

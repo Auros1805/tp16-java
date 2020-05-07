@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tp.pkg16.tapas;
+package application;
 
 import Class.Session;
 import java.net.URL;
@@ -25,7 +25,7 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private void btnAcceuil(ActionEvent event) {
-        Switcher.switchPage(1);
+        Switcher.changePage("nombre");
         System.out.println("You clicked me!"+Session.getPage());
     }
     
